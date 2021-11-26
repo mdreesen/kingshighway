@@ -1,0 +1,43 @@
+.hero_content {
+    height: 100vh;
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 50px;
+}
+
+.MuiPaper-root {
+    height: 100%;
+}
+
+.bishop_rose_img {
+    height: 90vh;
+}
+
+.mission_content {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px 0 15px;
+}
+
+.text_container {
+    padding: 0 10px;
+}
+
+/* .MuiCardMedia-root:hover {
+    filter: brightness(0.5);    
+} */
+
+.card_container {
+    padding: 20px;
+}
+
+.MuiGrid-root {
+    justify-content: center;
+}

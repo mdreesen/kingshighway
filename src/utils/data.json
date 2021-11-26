@@ -1,0 +1,46 @@
+{
+    "leaders": [
+        {
+            "name": "Bishop Michael Butler & 1st Lady Rosemary Butler",
+            "about": "Something about them",
+            "image": "bishoprosemary"
+        },
+        {
+            "name": "Pastor Lindsey Wright III & Lady Lateasa Wright",
+            "about": "Something about them",
+            "image": "wright"
+        },
+        {
+            "name": "Evangelist Tarsha Baily",
+            "about": "Something about them",
+            "image": "bailey"
+        },
+        {
+            "name": "Evangelist Danielle Henderson",
+            "about": "Something about them",
+            "image": "daniellehenderson"
+        },
+        {
+            "name": "Deacon Terrence Henderson",
+            "about": "Something about them",
+            "image": "terrencehenderson"
+        },
+        {
+            "name": "Evangelist & Author Michele Butler",
+            "about": "Something about them",
+            "image": "michelebutler"
+        },
+        {
+            "name": "Pastor Darrell Evans & 1st Lady Beverly Evans",
+            "about": "Something about them",
+            "image": "evans",
+            "location": "Lansing Michigan"
+        },
+        {
+            "name": "Pastor Saleem Masih & 1st Lady Masih",
+            "about": "Something about them",
+            "image": "masih",
+            "location": "Punjab Pakistan"
+        }
+    ]
+}
