@@ -2,12 +2,14 @@ import React from 'react';
 import './home.css';
 
 import Cards from '../../components/Cards';
+import Slideshow from '../../components/Slideshow';
 
 const Home = () => {
     return (
         <div>
             <section className="hero_content">
-                <h1 className="title">Kings Highway <br /> Deliverance Church, INTl</h1>
+                {/* <h1 className="title">Kings Highway <br /> Deliverance Church, INTl</h1> */}
+                {/* <Slideshow /> */}
             </section>
             <section className="mission_content">
                 <div className="text_container">

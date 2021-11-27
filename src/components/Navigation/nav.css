@@ -1,3 +1,17 @@
 .css-1e6y48t-MuiButtonBase-root-MuiButton-root {
     font-weight: bold !important;
 }
+
+.MuiAppBar-positionStatic {
+    position: fixed !important;
+    height: 65px;
+}
+
+.nav_name {
+    color: black;
+}
+
+.MuiTypography-root {
+    display: flex;
+    justify-content: flex-end;
+}
