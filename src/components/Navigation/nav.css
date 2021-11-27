@@ -2,6 +2,10 @@
     font-weight: bold !important;
 }
 
+/* .css-hip9hq-MuiPaper-root-MuiAppBar-root{
+    box-shadow: none !important;
+} */
+
 .MuiAppBar-positionStatic {
     position: fixed !important;
     height: 65px;

@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import './nav.css';
+import '../../fonts/fonts.css'
 
 export default function Navigation() {
     return (
@@ -17,7 +18,7 @@ export default function Navigation() {
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} style={{ color: "blue", fontWeight: "bold" }}>
                         <Button href="/">Home</Button>
                         <Button href="/about">About</Button>
-                        {/* <Button href="/global-ministries">Global Ministries</Button> */}
+                        <Button href="/giving">Give</Button>
                         <Button href="/contact">Contact</Button>
                     </Typography>
                     {/* <Button color="inherit">Login</Button> */}

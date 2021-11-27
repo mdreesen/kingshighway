@@ -1,0 +1,24 @@
+@font-face {
+    src: url('./Prestige-Signature-Script.ttf');
+    font-family: "Prestige Signature Script";
+}
+
+@font-face {
+    src: url('./RecordaScript.ttf');
+    font-family: "RecordaScript";
+}
+
+.nav_name {
+    font-family: "Prestige Signature Script";
+}
+@media only screen and (max-width: 600px) {
+.nav_name {
+     font-size: 33px;
+     margin-top: 6px;
+ }
+}
+
+.title {
+    font-family: "RecordaScript";
+    /* font-family: "Prestige Signature Script"; */
+}
