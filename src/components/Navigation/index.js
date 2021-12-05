@@ -15,7 +15,6 @@ import MenuItem from '@mui/material/MenuItem';
 import './nav.css';
 import '../../fonts/fonts.css';
 
-// const pages = ['Home', 'About', 'Give'];
 const pages = [
     {
         "name": "Home",
@@ -32,7 +31,6 @@ const pages = [
     }
 ]
 const settings = ['Profile', 'Account', 'Dashboard'];
-// const about = ['Gary', 'Michigan', 'Pakistan', 'Africa'];
 
 export default function Navigation() {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -53,6 +51,7 @@ export default function Navigation() {
         setAnchorElUser(null);
     };
 
+    // Title Component
     const Title = () => {
         return (
             <Typography
@@ -66,40 +65,7 @@ export default function Navigation() {
         );
     }
 
-    const SubMenu = () => {
-        return (
-            <Box sx={{ flexGrow: 0 }}>
-            {/* <Tooltip title="Open settings">
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-              </IconButton>
-            </Tooltip> */}
-            <Menu
-              sx={{ mt: '45px' }}
-              id="menu-appbar"
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {pages.subs.map((sub) => (
-                <MenuItem key={sub} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{sub}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-        );
-    }
-
+    // Mobile Menu Component
     const MobileLinkCollection = () => {
         return (
             <Menu
@@ -129,6 +95,7 @@ export default function Navigation() {
         );
     }
 
+    // Mobile Menu Component
     const MobileMenu = () => {
         return (
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -147,6 +114,7 @@ export default function Navigation() {
         );
     };
 
+    // Desktop Menu Component
     const DesktopMenu = () => {
         return (
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
