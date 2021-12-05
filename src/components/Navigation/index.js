@@ -18,14 +18,17 @@ import '../../fonts/fonts.css';
 // const pages = ['Home', 'About', 'Give'];
 const pages = [
     {
-        "link": "Home"
+        "name": "Home",
+        "link": "/"
     },
     {
-        "link": "About",
-        "sub": ["Gary", "Michigan", "Pakistan", "Africa"]
+        "name": "About",
+        "sub": ["Gary", "Michigan", "Pakistan", "Africa"],
+        "link": "/about"
     },
     {
-        "link": "Give"
+        "name": "Give",
+        "link": "/give"
     }
 ]
 const settings = ['Profile', 'Account', 'Dashboard'];
@@ -118,8 +121,8 @@ export default function Navigation() {
                 }}
             >
                 {pages?.map((page) => (
-                    <MenuItem key={page.link} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page?.link}</Typography>
+                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center">{page?.name}</Typography>
                     </MenuItem>
                 ))}
             </Menu>
@@ -149,11 +152,12 @@ export default function Navigation() {
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
                 {pages.map((page) => (
                     <Button
-                        key={page?.link}
+                        key={page?.name}
                         onClick={handleCloseNavMenu}
                         sx={{ my: 2, color: 'white', display: 'block' }}
+                        href={page?.link}
                     >
-                        {page?.link}
+                        {page?.name}
                     </Button>
                 ))}
             </Box>

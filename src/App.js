@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import pages
 import Home from './pages/Home';
 import About from './pages/About';
+import Give from './pages/Give';
 import GlobalMinistries from './pages/GlobalMinistries';
 import Contact from './pages/Contact';
 
@@ -18,7 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/give" component={Give} />
           <Route exact path='/global-ministries' component={GlobalMinistries} />
           <Route exact path='/contact' component={Contact} />
         </Switch>
