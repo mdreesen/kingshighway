@@ -22,7 +22,25 @@ const pages = [
     },
     {
         "name": "About",
-        "sub": ["Gary", "Michigan", "Pakistan", "Africa"],
+        "sub": [
+            {
+                "name": "Gary",
+                "link": "/location/Gary"
+            },
+            {
+                "name": "Michigan",
+                "link": "/location/Michigan"
+            },
+            {
+                "name": "Pakistan",
+                "link": "/location/Pakistan"
+            },
+            {
+                "name": "Africa",
+                "link": "/location/Africa"
+            }
+
+        ],
         "link": "/about"
     },
     {
@@ -58,10 +76,51 @@ export default function Navigation() {
                 variant="h6"
                 noWrap
                 component="div"
-                sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+                sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, justifyContent: 'center', alignItems: 'center' }}
             >
-                Kings Highway
+                KHDCI
             </Typography>
+        );
+    }
+
+    // Mobile Title Component
+    const MobileTitle = () => {
+        return (
+            <Typography
+                variant="h6"
+                noWrap
+                component="div"
+                sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'center', alignItems: 'center' }}
+            >
+                KHDCI
+            </Typography>
+        );
+    }
+
+    const AboutMenu = () => {
+        return (
+            <Menu
+                sx={{ mt: '45px' }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                keepMounted
+                transformOrigin={{
+                    vertical: 'top',
+                    horizontal: 'right',
+                }}
+                open={Boolean(anchorElUser)}
+                onClose={handleCloseUserMenu}
+            >
+                {pages?.sub?.map((sub) => (
+                    <MenuItem key={sub?.name} onClick={handleCloseNavMenu}>
+                        <Typography textAlign="center">{sub?.name}</Typography>
+                    </MenuItem>
+                ))}
+            </Menu>
         );
     }
 
@@ -87,7 +146,7 @@ export default function Navigation() {
                 }}
             >
                 {pages?.map((page) => (
-                    <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                    <MenuItem key={page?.name} onClick={handleCloseNavMenu}>
                         <Typography textAlign="center">{page?.name}</Typography>
                     </MenuItem>
                 ))}
@@ -110,6 +169,8 @@ export default function Navigation() {
                     <MenuIcon />
                 </IconButton>
                 <MobileLinkCollection />
+                {/* Mobile Title Component */}
+                <MobileTitle />
             </Box>
         );
     };
@@ -118,15 +179,27 @@ export default function Navigation() {
     const DesktopMenu = () => {
         return (
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                {/* Desktop Title Component */}
+                <Title />
                 {pages.map((page) => (
-                    <Button
-                        key={page?.name}
-                        onClick={handleCloseNavMenu}
-                        sx={{ my: 2, color: 'white', display: 'block' }}
-                        href={page?.link}
-                    >
-                        {page?.name}
-                    </Button>
+                    page.sub ? (
+                        <Button
+                            key={page?.name}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                            onClick={AboutMenu}
+                        >
+                            {page?.name}
+                        </Button>
+                    ) : (
+                        <Button
+                            key={page?.name}
+                            onClick={handleCloseNavMenu}
+                            sx={{ my: 2, color: 'white', display: 'block' }}
+                            href={page?.link}
+                        >
+                            {page?.name}
+                        </Button>
+                    )
                 ))}
             </Box>
         );
@@ -136,8 +209,6 @@ export default function Navigation() {
         <AppBar position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
-                    {/* Title Component */}
-                    <Title />
                     {/* Mobile Menu Component */}
                     <MobileMenu />
                     {/* Desktop Menu Component */}
