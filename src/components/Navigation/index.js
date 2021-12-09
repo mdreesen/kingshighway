@@ -46,7 +46,7 @@ const pages = [
     {
         "name": "Give",
         "link": "/give"
-    }
+    },
 ]
 const settings = ['Profile', 'Account', 'Dashboard'];
 
@@ -174,6 +174,8 @@ export default function Navigation() {
             </Box>
         );
     };
+
+    console.log("about", pages?.map((page) => page?.sub?.map((sub) => sub.name)))
 
     // Desktop Menu Component
     const DesktopMenu = () => {
