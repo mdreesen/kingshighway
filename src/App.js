@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/give" component={Give} />
           <Route exact path='/global-ministries' component={GlobalMinistries} />
-          <Route exact path='/contact' component={PrayerRequest} />
+          <Route exact path='/prayer' component={PrayerRequest} />
         </Switch>
       </div>
     </Router>
