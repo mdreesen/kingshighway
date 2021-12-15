@@ -9,52 +9,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './nav.css';
 import '../../fonts/fonts.css';
 
-const pages = [
-    {
-        "name": "Home",
-        "link": "/"
-    },
-    {
-        "name": "About",
-        "sub": [
-            {
-                "name": "Gary",
-                "link": "/location/Gary"
-            },
-            {
-                "name": "Michigan",
-                "link": "/location/Michigan"
-            },
-            {
-                "name": "Pakistan",
-                "link": "/location/Pakistan"
-            },
-            {
-                "name": "Africa",
-                "link": "/location/Africa"
-            }
-
-        ],
-        "link": "/about"
-    },
-    {
-        "name": "Give",
-        "link": "/give"
-    },
-]
+// importing navdata
+import navData from '../../utils/navdata.json';
+const navLink = navData.links;
 
 export default function Navigation() {
 
     const Links = () => {
         return (
             <Nav className="me-auto">
-                {pages.map((page) =>
+                {navLink.map((page, index) =>
                     page.sub ? (
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-                            {page.sub.map((sub) => <NavDropdown.Item href={sub.link}>{sub.name}</NavDropdown.Item>)}
+                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown" key={`dropdown-${index}`}>
+                            {page.sub.map((sub, i) => <NavDropdown.Item href={sub.link} key={`sub-${i}`}>{sub.name}</NavDropdown.Item>)}
                         </NavDropdown>
                     ) : (
-                        <Nav.Link href={page.link}>{page.name}</Nav.Link>
+                        <Nav.Link href={page.link} key={`page-${index}`}>{page.name}</Nav.Link>
                     )
                 )}
             </Nav>

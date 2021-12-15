@@ -1,16 +1,16 @@
 import * as React from 'react';
 
-import data from '../../utils/data.json';
+import leaderdata from '../../utils/leaderdata.json';
 
 export default function LeaderCard() {
 
-    const leaderdata = data.leaders;
-    console.log(leaderdata)
+    const data = leaderdata.leaders;
+    console.log(data)
 
     return (
         <div>
             {
-                leaderdata?.map((leader, index) => {
+                data?.map((leader, index) => {
                     return (
                         <div className="card" style={{ width: '18rem' }}>
                             <img src="..." className="card-img-top" alt="..." />

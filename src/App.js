@@ -15,10 +15,16 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <Navigation />
+        <Navigation />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          {/* Sub links for about */}
+          <Route exact path="/location/Gary" component={About} />
+          <Route exact path="/location/Michigan" component={About} />
+          <Route exact path="/location/Pakistan" component={About} />
+          <Route exact path="/location/Africa" component={About} />
+          {/* End sub links */}
           <Route exact path="/give" component={Give} />
           <Route exact path='/global-ministries' component={GlobalMinistries} />
           <Route exact path='/contact' component={Contact} />
