@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container'
@@ -14,6 +14,15 @@ import navData from '../../utils/navdata.json';
 const navLink = navData.links;
 
 export default function Navigation() {
+
+    const [navbar, setNavbar] = useState(false);
+
+    const background = () => {
+        console.log(window.scrollY)
+        return window.scrollY >= 80 ? setNavbar(true) : setNavbar(false)
+    }
+
+    window.addEventListener('scroll', background)
 
     const Links = () => {
         return (
@@ -32,9 +41,9 @@ export default function Navigation() {
     }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg={background ? 'nav_color' : 'nav_opacity'} variant="dark">
             <Container>
-                <Navbar.Brand href="#home">KHDCI</Navbar.Brand>
+                <Navbar.Brand>KHDCI</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
