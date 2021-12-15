@@ -20,7 +20,7 @@ export default function Navigation() {
             <Nav className="me-auto">
                 {navLink.map((page, index) =>
                     page.sub ? (
-                        <NavDropdown title="Dropdown" id="collasible-nav-dropdown" key={`dropdown-${index}`}>
+                        <NavDropdown title={page.name} id="collasible-nav-dropdown" key={`dropdown-${index}`}>
                             {page.sub.map((sub, i) => <NavDropdown.Item href={sub.link} key={`sub-${i}`}>{sub.name}</NavDropdown.Item>)}
                         </NavDropdown>
                     ) : (

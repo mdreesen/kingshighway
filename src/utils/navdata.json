@@ -25,6 +25,10 @@
                 {
                     "name": "Africa",
                     "link": "/location/Africa"
+                },
+                {
+                    "name": "Leaders",
+                    "link": "/leaders"
                 }
     
             ]

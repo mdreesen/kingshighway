@@ -1,0 +1,8 @@
+.card {
+    border: none !important;
+}
+
+.card-img, .card-img-bottom, .card-img-top {
+    height: 30vh;
+    object-fit: cover;
+}
