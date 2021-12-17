@@ -21,6 +21,7 @@ const Home = () => {
         <div>
             <section className="hero_content">
                 <video
+                className="video_home"
                 autoPlay
                 loop
                 muted
