@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    height: 8vh;
+    /* height: 8vh; */
     position: fixed;
     width: 100%;
     z-index: 1000;
