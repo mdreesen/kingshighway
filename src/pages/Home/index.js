@@ -4,12 +4,29 @@ import './home.css';
 import Cards from '../../components/Cards';
 import Slideshow from '../../components/Slideshow';
 
+import videoOne from '../../utils/videos/choirone.mp4';
+import videoTwo from '../../utils/videos/choirtwo.mp4'
+import videoThree from '../../utils/videos/prayer.mp4';
+import videoFour from '../../utils/videos/choirthree.mp4'
+
+const videoArr = [videoOne, videoTwo, videoThree, videoFour]
+
+const videos = videoArr.map((video) => {
+    return video;
+})
+
+
 const Home = () => {
     return (
         <div>
             <section className="hero_content">
-                {/* <h1 className="title">Kings Highway <br /> Deliverance Church, INTl</h1> */}
-                {/* <Slideshow /> */}
+                <video
+                autoPlay
+                loop
+                muted
+                >
+                    <source src={videoOne}/>
+                </video>
             </section>
             <section className="mission_content">
                 <div className="text_container">

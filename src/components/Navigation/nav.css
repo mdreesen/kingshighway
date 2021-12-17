@@ -4,13 +4,27 @@
 
 .navbar {
     height: 8vh;
-}
-
-/* .navbar-nav {
-    width: 40%;
-    justify-content: space-between;
-}
-
-.me-auto {
+    position: fixed;
     width: 100%;
+    z-index: 1000;
+}
+
+/* .bg-nav-stable {
+    background: red;
 } */
+.bg-nav-active {
+    background: linear-gradient(90deg, rgba(0,33,83,1) 0%, rgba(0,94,150,0) 430%);
+}
+.link-stable {
+    color: white !important;
+}
+.link-active {
+    color: white !important;
+}
+.dropdown-toggle {
+    color: white !important;
+}
+
+.dropdown-item {
+    color: black !important;
+}

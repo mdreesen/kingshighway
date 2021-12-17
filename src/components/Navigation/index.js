@@ -18,7 +18,6 @@ export default function Navigation() {
     const [navbar, setNavbar] = useState(false);
 
     const background = () => {
-        console.log(window.scrollY)
         return window.scrollY >= 80 ? setNavbar(true) : setNavbar(false)
     }
 
@@ -29,11 +28,11 @@ export default function Navigation() {
             <Nav className="me-auto">
                 {navLink.map((page, index) =>
                     page.sub ? (
-                        <NavDropdown title={page.name} id="collasible-nav-dropdown" key={`dropdown-${index}`}>
-                            {page.sub.map((sub, i) => <NavDropdown.Item href={sub.link} key={`sub-${i}`}>{sub.name}</NavDropdown.Item>)}
+                        <NavDropdown className={navbar ? 'link-active' : 'link-stable'} title={page.name} id="collasible-nav-dropdown" key={`dropdown-${index}`}>
+                            {page.sub.map((sub, i) => <NavDropdown.Item className={navbar ? 'link-active' : 'link-stable'} href={sub.link} key={`sub-${i}`}>{sub.name}</NavDropdown.Item>)}
                         </NavDropdown>
                     ) : (
-                        <Nav.Link href={page.link} key={`page-${index}`}>{page.name}</Nav.Link>
+                        <Nav.Link className={navbar ? 'link-active' : 'link-stable'} href={page.link} key={`page-${index}`}>{page.name}</Nav.Link>
                     )
                 )}
             </Nav>
@@ -41,7 +40,7 @@ export default function Navigation() {
     }
 
     return (
-        <Navbar collapseOnSelect expand="lg" bg={background ? 'nav_color' : 'nav_opacity'} variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg={navbar ? 'nav-active' : 'nav-stable'} variant="dark">
             <Container>
                 <Navbar.Brand>KHDCI</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
