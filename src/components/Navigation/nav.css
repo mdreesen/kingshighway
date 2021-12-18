@@ -7,15 +7,15 @@
     position: fixed;
     width: 100%;
     z-index: 1000;
+    transition: 0.3s;
 }
 
 /* .bg-nav-stable {
-    background: red;
 } */
+
 .bg-nav-active {
-    /* background: linear-gradient(90deg, rgba(0,33,83,1) 0%, rgba(0,94,150,0) 430%); */
-    /* background: linear-gradient(90deg, rgba(0,33,83,1) 0%, rgba(0,94,150,1) 400%); */
     background: linear-gradient(90deg, rgba(0,33,83,1) 0%, rgba(0,94,150,0.8267682072829132) 400%);
+    transition: 0.3s;
 }
 .link-stable {
     color: white !important;
