@@ -34,6 +34,11 @@
             ]
         },
         {
+            "name": "Prayer Request",
+            "link": "/prayer",
+            "component": "Give"
+        },
+        {
             "name": "Give",
             "link": "/give",
             "component": "Give"
