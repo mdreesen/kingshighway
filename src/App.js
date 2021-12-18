@@ -7,7 +7,7 @@ import About from './pages/About';
 import Leaders from './pages/Leaders';
 import Give from './pages/Give';
 import GlobalMinistries from './pages/GlobalMinistries';
-import Contact from './pages/Contact';
+import PrayerRequest from './pages/PrayerRequest';
 
 // import Appbar (navigation)
 import Navigation from './components/Navigation';
@@ -29,7 +29,7 @@ function App() {
           {/* End sub links */}
           <Route exact path="/give" component={Give} />
           <Route exact path='/global-ministries' component={GlobalMinistries} />
-          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/prayer' component={PrayerRequest} />
         </Switch>
       </div>
     </Router>
