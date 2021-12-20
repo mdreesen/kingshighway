@@ -11,12 +11,12 @@ const Home = () => {
         <div>
             <section className="hero_content">
                 <video
-                className="video_home"
-                autoPlay
-                loop
-                muted
+                    className="video_home"
+                    autoPlay
+                    loop
+                    muted
                 >
-                    <source src={videoOne}/>
+                    <source src={videoOne} />
                 </video>
             </section>
             <section className="mission_content">

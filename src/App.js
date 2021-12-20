@@ -11,6 +11,7 @@ import PrayerRequest from './pages/PrayerRequest';
 
 // import Appbar (navigation)
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route exact path='/global-ministries' component={GlobalMinistries} />
           <Route exact path='/prayer' component={PrayerRequest} />
         </Switch>
+        <Footer/>
       </div>
     </Router>
   );
