@@ -25,7 +25,7 @@ const Home = () => {
                         Our mission is to seek God’s face, teach the good news to the lost and to make disciples for the Kingdom of God, our hope is to be a blessing to you, your family and surrounding communities, we are dedicated to the gospel and continuing the works of our Lord and Savior, Jesus Christ.
                     </h2>
                 </div>
-                <img alt="" className="bishop_rose_img" src="./images/homePic.webp"></img>
+                {/* <img alt="" className="bishop_rose_img" src="./images/homePic.webp"></img> */}
             </section>
         </div>
     );

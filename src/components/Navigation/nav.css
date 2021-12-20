@@ -10,15 +10,16 @@
     transition: 0.3s;
 }
 
-/* .bg-nav-stable {
-} */
-
+.bg-nav-stable::before {
+    transition: 0.5s;
+}
 .bg-nav-active {
+    transition: 0.5s;
     background: linear-gradient(90deg, rgba(0,33,83,1) 0%, rgba(0,94,150,0.8267682072829132) 400%);
-    transition: 0.3s;
 }
 .link-stable {
     color: white !important;
+    /* color : #FCB711; */
 }
 .link-active {
     color: white !important;
