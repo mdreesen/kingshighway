@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9a3b2a3b.chunk.css",
+    "main.js": "/static/js/main.32b9e816.chunk.js",
+    "main.js.map": "/static/js/main.32b9e816.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.73ea463f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.73ea463f.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.462a846e.chunk.js": "/static/js/2.462a846e.chunk.js",
+    "static/js/2.462a846e.chunk.js.map": "/static/js/2.462a846e.chunk.js.map",
+    "static/js/3.d1838671.chunk.js": "/static/js/3.d1838671.chunk.js",
+    "static/js/3.d1838671.chunk.js.map": "/static/js/3.d1838671.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.9a3b2a3b.chunk.css.map": "/static/css/main.9a3b2a3b.chunk.css.map",
+    "static/js/2.462a846e.chunk.js.LICENSE.txt": "/static/js/2.462a846e.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/static/media/RecordaScript.8f3ba4d4.ttf",
+    "static/media/choirone.aee23380.mp4": "/static/media/choirone.aee23380.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73ea463f.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.462a846e.chunk.js",
+    "static/css/main.9a3b2a3b.chunk.css",
+    "static/js/main.32b9e816.chunk.js"
+  ]
+}
