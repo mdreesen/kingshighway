@@ -50,9 +50,6 @@ const EventSection = () => {
     return (
         <section className="event_container">
             <div className="text_container">
-                {/* <h2>
-                Our mission is to seek God’s face, teach the good news to the lost and to make disciples for the Kingdom of God, our hope is to be a blessing to you, your family and surrounding communities, we are dedicated to the gospel and continuing the works of our Lord and Savior, Jesus Christ.
-            </h2> */}
                 <h2 className="section_title">Upcoming Events</h2>
                 {
                     eventArr.map((image, index) => {
