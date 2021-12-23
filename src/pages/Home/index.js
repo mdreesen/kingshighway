@@ -88,12 +88,12 @@ const ConnectSection = () => {
 
 const Home = () => {
 
-    const browserwidth = window.innerWidth < 960 || window.screen.width < 960
+    const browserwidth = window.innerWidth < 600 || window.screen.width < 600
 
     return (
         <div>
             {
-                browserwidth ? (
+                browserwidth === true ? (
                     <HeroImage />
                 ) : (
                     <HeroVideo />
