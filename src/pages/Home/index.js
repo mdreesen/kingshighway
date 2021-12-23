@@ -23,6 +23,23 @@ const eventArr = [eventOne];
 // Connect Image Array
 const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 
+const HeroSection = () => {
+    return (
+        <section className="hero_content">
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                preload="auto"
+                tabIndex="-1"
+            >
+                <source src={videoOne} type="video/webm" />
+            </video>
+        </section>
+    );
+}
+
 const EventSection = () => {
     return (
         <section className="event_container">
@@ -67,17 +84,7 @@ const ConnectSection = () => {
 const Home = () => {
     return (
         <div>
-            <section className="hero_content">
-                <video
-                    className="video_home"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                >
-                    <source src={videoOne} />
-                </video>
-            </section>
+            <HeroSection />
             <EventSection />
             <ConnectSection />
         </div>
