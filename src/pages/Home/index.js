@@ -31,7 +31,6 @@ const HeroSection = () => {
                 loop={true}
                 controls={false}
                 playsInline={true}
-                loop="loop"
             >
                 <source src={videoOne} type="video/mp4" />
             </video>
