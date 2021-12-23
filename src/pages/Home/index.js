@@ -27,9 +27,10 @@ const HeroSection = () => {
     return (
         <section className="hero_content">
             <video
-                muted="muted" 
-                autoPlay="autoplay" 
-                playsInline="playsInline" 
+                autoPlay={true}
+                loop={true}
+                controls={false}
+                playsInline={true}
                 loop="loop"
             >
                 <source src={videoOne} type="video/mp4" />
