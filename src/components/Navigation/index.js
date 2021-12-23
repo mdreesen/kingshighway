@@ -42,7 +42,7 @@ export default function Navigation() {
     return (
         <Navbar collapseOnSelect expand="lg" bg={navbar ? 'nav-active' : 'navbar'} variant="dark">
             <Container>
-                <Navbar.Brand>KHDCI</Navbar.Brand>
+                <Navbar.Brand className="nav_brand">KHDCI</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>

@@ -27,3 +27,8 @@
 .dropdown-item {
     color: black !important;
 }
+
+.navbar-dark .navbar-brand {
+    font-size: 1.5rem;
+    color: #B88746;
+}
