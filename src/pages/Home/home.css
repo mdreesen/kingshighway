@@ -11,6 +11,17 @@ video {
     width: 100%;
     object-fit: cover;
 }
+
+.parallax-content {
+    height: 100vh;
+    width: 100%;
+}
+
+.react-parallax {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
 .section_title {
     font-family: "Prestige Signature Script";
     height: 20vh;
@@ -19,7 +30,7 @@ video {
     align-items: center;
     font-size: 65px;
     color: #B88746;
-    margin-top: 15vh;    
+    margin-top: 15vh    
 }
 
 .event_container {

@@ -1,10 +1,12 @@
 import React, { Suspense } from 'react';
+import { Parallax } from 'react-parallax';
 import './home.css';
 
+// Import Hero Video (desktop)
 import videoOne from '../../utils/videos/choirone.webm';
-// import videoTwo from '../../utils/videos/choirtwo.mp4'
-// import videoThree from '../../utils/videos/prayer.mp4';
-// import videoFour from '../../utils/videos/choirthree.mp4'
+
+// Import Hero Image (mobile)
+import heroImage from '../../utils/heroImages/choirImage.png';
 
 // import Event Images
 import eventOne from '../../utils/eventImages/eventOne.webp';
@@ -15,25 +17,30 @@ import connectTwo from '../../utils/connectImages/connectTwo.webp';
 import connectThree from '../../utils/connectImages/connectThree.webp';
 import connectFour from '../../utils/connectImages/connectFour.webp';
 
-console.log(connectOne)
-
 // Event Image Array
 const eventArr = [eventOne];
 
 // Connect Image Array
 const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 
-const HeroSection = () => {
+const HeroVideo = () => {
     return (
         <section className="hero_content">
             <video
-                autoPlay={true}
-                loop={true}
-                controls={false}
-                playsInline={true}
+                muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop"
             >
                 <source src={videoOne} type="video/mp4" />
             </video>
+        </section>
+    );
+}
+
+const HeroImage = () => {
+    return (
+        <section className="hero_content">
+            <Parallax bgImage={heroImage} strength={200}>
+                <div className="parallax-content"></div>
+            </Parallax>
         </section>
     );
 }
@@ -80,9 +87,18 @@ const ConnectSection = () => {
 }
 
 const Home = () => {
+
+    const browserwidth = window.innerWidth < 960 || window.screen.width < 960
+
     return (
         <div>
-            <HeroSection />
+            {
+                browserwidth ? (
+                    <HeroImage />
+                ) : (
+                    <HeroVideo />
+                )
+            }
             <EventSection />
             <ConnectSection />
         </div>
