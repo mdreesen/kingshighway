@@ -34,7 +34,6 @@ export default function Footer() {
     return (
         <div class="footer position-static" collapseOnSelect expand="lg" variant="dark">
             <Container>
-                <Navbar.Brand>KHDCI</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>

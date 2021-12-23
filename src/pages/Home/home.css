@@ -11,20 +11,18 @@ video {
     width: 100%;
     object-fit: cover;
 }
-.title {
-    font-size: 50px;
-}
-
-.MuiPaper-root {
-    height: 100%;
-}
-
-.bishop_rose_img {
-    height: 90vh;
-}
-
-.mission_content {
+.section_title {
+    font-family: "Prestige Signature Script";
+    height: 20vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+}
+
+.event_container {
+    height: 105vh;
+    margin-top: 10%;  
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -32,6 +30,33 @@ video {
     padding: 0 15px 0 15px;
 }
 
+.event_content {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.event_img {
+    width: 75%;
+}
+
 .text_container {
     padding: 0 10px;
+}
+
+.connect_container {
+    height: 125vh;
+}
+
+.connect_image_container {
+    display: inline-flex;
+    margin: 5%;
+}
+
+.connect_image {
+    width: 40vh;
+    height: 30vh;
+    object-fit: cover;
 }
