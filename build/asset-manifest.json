@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c5db9c3.chunk.css",
-    "main.js": "/static/js/main.65164425.chunk.js",
-    "main.js.map": "/static/js/main.65164425.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.650c1746.js",
-    "runtime-main.js.map": "/static/js/runtime-main.650c1746.js.map",
+    "main.css": "/static/css/main.6f29be3e.chunk.css",
+    "main.js": "/static/js/main.1db84d68.chunk.js",
+    "main.js.map": "/static/js/main.1db84d68.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8b1e24fa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8b1e24fa.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.6bce9475.chunk.js": "/static/js/2.6bce9475.chunk.js",
-    "static/js/2.6bce9475.chunk.js.map": "/static/js/2.6bce9475.chunk.js.map",
-    "static/js/3.32e823d4.chunk.js": "/static/js/3.32e823d4.chunk.js",
-    "static/js/3.32e823d4.chunk.js.map": "/static/js/3.32e823d4.chunk.js.map",
+    "static/js/2.cfa81542.chunk.js": "/static/js/2.cfa81542.chunk.js",
+    "static/js/2.cfa81542.chunk.js.map": "/static/js/2.cfa81542.chunk.js.map",
+    "static/js/3.e733a167.chunk.js": "/static/js/3.e733a167.chunk.js",
+    "static/js/3.e733a167.chunk.js.map": "/static/js/3.e733a167.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.4c5db9c3.chunk.css.map": "/static/css/main.4c5db9c3.chunk.css.map",
-    "static/js/2.6bce9475.chunk.js.LICENSE.txt": "/static/js/2.6bce9475.chunk.js.LICENSE.txt",
+    "static/css/main.6f29be3e.chunk.css.map": "/static/css/main.6f29be3e.chunk.css.map",
+    "static/js/2.cfa81542.chunk.js.LICENSE.txt": "/static/js/2.cfa81542.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/static/media/RecordaScript.8f3ba4d4.ttf",
     "static/media/choirImage.ec31d53b.png": "/static/media/choirImage.ec31d53b.png",
     "static/media/choirone.b63741d7.webm": "/static/media/choirone.b63741d7.webm",
@@ -24,10 +24,10 @@
     "static/media/eventOne.3bfa6f04.webp": "/static/media/eventOne.3bfa6f04.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.650c1746.js",
+    "static/js/runtime-main.8b1e24fa.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.6bce9475.chunk.js",
-    "static/css/main.4c5db9c3.chunk.css",
-    "static/js/main.65164425.chunk.js"
+    "static/js/2.cfa81542.chunk.js",
+    "static/css/main.6f29be3e.chunk.css",
+    "static/js/main.1db84d68.chunk.js"
   ]
 }

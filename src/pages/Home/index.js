@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { Parallax } from 'react-parallax';
+import ReactPlayer from 'react-player';
 import './home.css';
 
 // Import Hero Video (desktop)
@@ -24,20 +25,23 @@ const eventArr = [eventOne];
 const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 
 const HeroSection = () => {
-    const browserwidth = window.innerWidth < 600 || window.screen.width < 600
     return (
         <section className="hero_content">
-            {browserwidth === true ? (
-                <Parallax bgImage={heroImage} strength={200}>
-                    <div className="parallax-content"></div>
-                </Parallax>
-            ) : (
-                <video
-                    muted="muted" autoPlay="autoPlay" playsInline="playsInline" loop="loop"
-                >
-                    <source src={videoOne} type="video/mp4" />
-                </video>
-            )}
+            <ReactPlayer
+                className='react-player'
+                width='100%'
+                height='100%'
+                loop={true}
+                controls={false}
+                muted={true}
+                playing={true}
+                url={[
+                    { src: videoOne, type: 'video/webm' },
+                ]}
+            />
+            <Parallax bgImage={heroImage} strength={200}>
+                <div className="parallax-content"></div>
+            </Parallax>
         </section>
     );
 }
