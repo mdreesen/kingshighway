@@ -33,7 +33,7 @@ const EventSection = () => {
                     eventArr.map((image, index) => {
                         return (
                             <div className="event_content" key={`event-${index}-image`}>
-                                <img className="event_img" src={image}></img>
+                                <img className="event_img" alt="" src={image}></img>
                             </div>
                         );
                     })
@@ -50,7 +50,7 @@ const ConnectSection = () => {
             {connectArr.map((image, index) => {
                 return (
                     <div className="connect_image_container" key={`connect-${index}-image`}>
-                        <img className="connect_image" src={image}></img>
+                        <img className="connect_image" alt="" src={image}></img>
                     </div>
                 )
             })}
