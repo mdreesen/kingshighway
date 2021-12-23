@@ -3,6 +3,7 @@
 } */
 
 .footer {
+    background: #e9b400;
     height: 25vh;    
     width: 100%;
     z-index: 1000;
