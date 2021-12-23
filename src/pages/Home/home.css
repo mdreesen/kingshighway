@@ -88,9 +88,9 @@ video {
 @media only screen and (max-width: 878px) {
     .react-player {
         z-index: 1;
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
+        height: 0;
+        width: 0;
+        object-fit: none;
         display: none;
     }
     .react-parallax {
@@ -101,9 +101,9 @@ video {
         display: block;
     }
     video {
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
+        height: 0;
+        width: 0;
+        object-fit: none;
         display: none;
     }
     .parallax-content {
