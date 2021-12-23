@@ -27,14 +27,12 @@ const HeroSection = () => {
     return (
         <section className="hero_content">
             <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                tabIndex="-1"
+                muted="muted" 
+                autoPlay="autoplay" 
+                playsInline="playsInline" 
+                loop="loop"
             >
-                <source src={videoOne} type="video/webm" />
+                <source src={videoOne} type="video/mp4" />
             </video>
         </section>
     );
