@@ -25,6 +25,7 @@ video {
 }
 
 .react-parallax {
+    z-index: 1;
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -86,17 +87,23 @@ video {
 
 @media only screen and (max-width: 878px) {
     .react-player {
-        z-index: 100;
+        z-index: 1;
         height: 100vh;
         width: 100%;
         object-fit: cover;
         display: none;
     }
     .react-parallax {
+        z-index: 200;
         height: 100vh;
         width: 100%;
         object-fit: cover;
         display: block;
+    }
+    .parallax-content {
+        z-index: 200;
+        height: 100vh;
+        width: 100%;
     }
     .connect_container {
         height: 188vh;
