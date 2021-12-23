@@ -32,7 +32,7 @@ export default function Footer() {
     }
 
     return (
-        <div class="footer position-static" collapseOnSelect expand="lg" variant="dark">
+        <div className="footer position-static" collapseOnSelect expand="lg" variant="dark">
             <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">

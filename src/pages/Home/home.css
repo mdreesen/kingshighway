@@ -19,6 +19,7 @@ video {
     align-items: center;
     font-size: 65px;
     color: #B88746;
+    margin-top: 15vh;    
 }
 
 .event_container {
@@ -40,7 +41,8 @@ video {
 }
 
 .event_img {
-    width: 75%;
+    object-fit: contain;
+    width: 70%;
 }
 
 .text_container {
@@ -65,5 +67,8 @@ video {
 @media only screen and (max-width: 878px) {
     .connect_container {
         height: 188vh;
+    }
+    .event_img {
+        width: 100%;
     }
   }

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import './home.css';
 
-import videoOne from '../../utils/videos/choirone.mp4';
+import videoOne from '../../utils/videos/choirone.webm';
 // import videoTwo from '../../utils/videos/choirtwo.mp4'
 // import videoThree from '../../utils/videos/prayer.mp4';
 // import videoFour from '../../utils/videos/choirthree.mp4'
@@ -14,6 +14,8 @@ import connectOne from '../../utils/connectImages/connectOne.webp';
 import connectTwo from '../../utils/connectImages/connectTwo.webp';
 import connectThree from '../../utils/connectImages/connectThree.webp';
 import connectFour from '../../utils/connectImages/connectFour.webp';
+
+console.log(connectOne)
 
 // Event Image Array
 const eventArr = [eventOne];
@@ -32,9 +34,11 @@ const EventSection = () => {
                 {
                     eventArr.map((image, index) => {
                         return (
-                            <div className="event_content" key={`event-${index}-image`}>
-                                <img className="event_img" alt="" src={image}></img>
-                            </div>
+                            <Suspense fallback={<div />} key={`event-${index}-image`}>
+                                <div className="event_content">
+                                    <img className="event_img" alt="" src={image}></img>
+                                </div>
+                            </Suspense>
                         );
                     })
                 }
@@ -49,9 +53,11 @@ const ConnectSection = () => {
             <h2 className="section_title">Get Connected</h2>
             {connectArr.map((image, index) => {
                 return (
-                    <div className="connect_image_container" key={`connect-${index}-image`}>
-                        <img className="connect_image" alt="" src={image}></img>
-                    </div>
+                    <Suspense fallback={<div />} key={`connect-${index}-image`}>
+                        <div className="connect_image_container">
+                            <img className="connect_image" alt="" src={image} loading="lazy"></img>
+                        </div>
+                    </Suspense>
                 )
             })}
         </section>
@@ -67,11 +73,12 @@ const Home = () => {
                     autoPlay
                     loop
                     muted
+                    playsInline
                 >
                     <source src={videoOne} />
                 </video>
             </section>
-            <EventSection/>
+            <EventSection />
             <ConnectSection />
         </div>
     );
