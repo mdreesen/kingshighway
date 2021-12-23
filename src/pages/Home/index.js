@@ -23,24 +23,21 @@ const eventArr = [eventOne];
 // Connect Image Array
 const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 
-const HeroVideo = () => {
+const HeroSection = () => {
+    const browserwidth = window.innerWidth < 600 || window.screen.width < 600
     return (
         <section className="hero_content">
-            <video
-                muted="muted" autoplay="autoplay" playsinline="playsinline" loop="loop"
-            >
-                <source src={videoOne} type="video/mp4" />
-            </video>
-        </section>
-    );
-}
-
-const HeroImage = () => {
-    return (
-        <section className="hero_content">
-            <Parallax bgImage={heroImage} strength={200}>
-                <div className="parallax-content"></div>
-            </Parallax>
+            {browserwidth === true ? (
+                <Parallax bgImage={heroImage} strength={200}>
+                    <div className="parallax-content"></div>
+                </Parallax>
+            ) : (
+                <video
+                    muted="muted" autoPlay="autoPlay" playsInline="playsInline" loop="loop"
+                >
+                    <source src={videoOne} type="video/mp4" />
+                </video>
+            )}
         </section>
     );
 }
@@ -88,17 +85,9 @@ const ConnectSection = () => {
 
 const Home = () => {
 
-    const browserwidth = window.innerWidth < 600 || window.screen.width < 600
-
     return (
         <div>
-            {
-                browserwidth === true ? (
-                    <HeroImage />
-                ) : (
-                    <HeroVideo />
-                )
-            }
+            <HeroSection />
             <EventSection />
             <ConnectSection />
         </div>
