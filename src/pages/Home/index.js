@@ -4,7 +4,7 @@ import Carousel from '../../components/Carousel';
 import './home.css';
 
 // Import Hero Image (mobile)
-import heroImage from '../../utils/heroImages/choirImage.png';
+import heroImage from '../../utils/heroImages/choirImage.webp';
 
 // import Event Images
 import eventOne from '../../utils/eventImages/eventOne.webp';
