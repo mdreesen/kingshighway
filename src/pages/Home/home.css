@@ -66,25 +66,17 @@
     align-items: center;
     font-size: 65px;
     color: #B88746;
-    margin-top: 15vh    
+    margin: 12vh 0 5vh 0;   
 }
 
 .event_container {
-    height: 105vh;
+    height: 75vh;
     margin-top: 10%;  
     justify-content: space-between;
     align-content: center;
     align-items: center;
     text-align: center;
     padding: 0 15px 0 15px;
-}
-
-.event_content {
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .event_img {
@@ -123,11 +115,11 @@
     }
     .service {
         font-size: 2rem;
-}
+    }
 
-.service_p {
-    font-size: 1rem;
-}
+    .service_p {
+        font-size: 1rem;
+    }
   }
   @media only screen and (max-width: 625px) {
     .hero_title {
