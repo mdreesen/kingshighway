@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import imageOne from '../../utils/eventImages/eventOne.webp';
 
 // Import Event Data
-import eventData from '../../utils/eventdata.json';
+// import eventData from '../../utils/eventdata.json';
 
 const Slideshow = () => {
 
