@@ -1,10 +1,6 @@
 import React, { Suspense } from 'react';
 import { Parallax } from 'react-parallax';
-import ReactPlayer from 'react-player';
 import './home.css';
-
-// Import Hero Video (desktop)
-import videoOne from '../../utils/videos/choirone.webm';
 
 // Import Hero Image (mobile)
 import heroImage from '../../utils/heroImages/choirImage.png';
@@ -27,22 +23,9 @@ const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 const HeroSection = () => {
     return (
         <section className="hero_content">
-            {/* <ReactPlayer
-                className='react-player'
-                width='100%'
-                height='100%'
-                loop={true}
-                controls={false}
-                muted={true}
-                playing={true}
-                url={[
-                    { src: videoOne, type: 'video/webm' },
-                ]}
-            /> */}
             <Parallax bgImage={heroImage} strength={200}>
                 <div className="parallax-content">
                     <h2 className="hero_title">Kings Highway<br/>Deliverance Church<br/>International</h2>
-                    {/* <div className="darkOverlay"></div> */}
                 </div>
             </Parallax>
         </section>
