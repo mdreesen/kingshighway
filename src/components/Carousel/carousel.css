@@ -7,6 +7,9 @@
     width: 70%;
 }
 
+.active .carousel-item {
+    width: 70%;
+}
 @media only screen and (max-width: 878px) {
     .react-slideshow-container {
         width: 60vh;
