@@ -27,7 +27,7 @@ const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 const HeroSection = () => {
     return (
         <section className="hero_content">
-            <ReactPlayer
+            {/* <ReactPlayer
                 className='react-player'
                 width='100%'
                 height='100%'
@@ -38,9 +38,12 @@ const HeroSection = () => {
                 url={[
                     { src: videoOne, type: 'video/webm' },
                 ]}
-            />
+            /> */}
             <Parallax bgImage={heroImage} strength={200}>
-                <div className="parallax-content"></div>
+                <div className="parallax-content">
+                    <h2 className="hero_title">Kings Highway<br/>Deliverance Church<br/>International</h2>
+                    {/* <div className="darkOverlay"></div> */}
+                </div>
             </Parallax>
         </section>
     );
