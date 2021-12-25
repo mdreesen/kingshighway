@@ -3,15 +3,16 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import './slide.css';
 
+// Import image
+import imageOne from '../../utils/eventImages/eventOne.webp';
+
 const images = [
-    './images/bailey.webp',
-    './images/evans.webp',
-    './images/wright.webp'
+    imageOne
 ];
 
 const properties = {
     indicators: true,
-    arrows: false
+    arrows: true
   }
 
 const Slideshow = () => {
@@ -19,12 +20,10 @@ const Slideshow = () => {
         <div className="slide-container">
             <Slide scale={0.4} {...properties}>
                 {
-                    images.map((each, index) => <img key={index} style={{
-                        'height': '30rem',
-                        'width': '40rem',
+                    images.map((each, index) => <img className="event_img" key={index} style={{
                         'marginLeft': 'auto',
                         'marginRight': 'auto',
-                        'backgroundSize': 'contain',
+                        'object-fit': 'cover',
                         'boxShadow': '0 0 50px rgba(0, 0, 0, 0.7)'
                     }} src={each} />)
                 }

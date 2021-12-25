@@ -21,6 +21,26 @@
     opacity: .5; */
 }
 
+.time_section {
+    background: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    color: white;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.service {
+        font-size: 3rem;
+}
+
+.service_p {
+    font-size: 2rem;
+}
+
 .darkOverlay {
     background: black;
     z-index: 300;
@@ -30,13 +50,6 @@
 
     opacity: .6;
 }
-
-/* .react-player {
-    z-index: 100;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-} */
 
 .react-parallax {
     z-index: 1;
@@ -99,34 +112,8 @@
 }
 
 @media only screen and (max-width: 878px) {
-    /* .react-player {
-        z-index: 1;
-        height: 0;
-        width: 0;
-        object-fit: none;
-        display: none;
-    } */
-    /* .react-parallax {
-        z-index: 200;
-        height: 100vh;
-        width: 100%;
-        object-fit: cover;
-        display: block;
-    } */
-    /* video {
-        height: 0;
-        width: 0;
-        object-fit: none;
-        display: none;
-    } */
-    /* .parallax-content {
-        z-index: 200;
-        height: 100vh;
-        width: 100%;
-    } */
-
     .hero_title {
-        font-size: 6rem;
+        font-size: 5rem;
     }
     .connect_container {
         height: 188vh;
@@ -134,15 +121,34 @@
     .event_img {
         width: 100%;
     }
+    .service {
+        font-size: 2rem;
+}
+
+.service_p {
+    font-size: 1rem;
+}
   }
+  @media only screen and (max-width: 625px) {
+    .hero_title {
+        font-size: 4.75rem;
+    }
+}
 
   @media only screen and (max-width: 578px) {
     .hero_title {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 }
 @media only screen and (max-width: 478px) {
     .hero_title {
-        font-size: 2.85rem;
+        font-size: 2rem;
+    }
+    .service {
+        font-size: 1rem;
+    }
+
+    .service_p {
+        font-size: .75rem;
     }
 }

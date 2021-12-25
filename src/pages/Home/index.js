@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { Parallax } from 'react-parallax';
+import Carousel from '../../components/Carousel';
 import './home.css';
 
 // Import Hero Image (mobile)
@@ -28,6 +29,11 @@ const HeroSection = () => {
                     <h2 className="hero_title">Kings Highway<br/>Deliverance Church<br/>International</h2>
                 </div>
             </Parallax>
+            <div className="time_section">
+                <h3 className="service">Service<br/>Times</h3>
+                <p className="service_p">Sunday Service:</p>
+                <p className="service_p">10am - 12pm Central</p>
+            </div>
         </section>
     );
 }
@@ -42,7 +48,7 @@ const EventSection = () => {
                         return (
                             <Suspense fallback={<div />} key={`event-${index}-image`}>
                                 <div className="event_content">
-                                    <img className="event_img" alt="" src={image}></img>
+                                    <Carousel/>
                                 </div>
                             </Suspense>
                         );

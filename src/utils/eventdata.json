@@ -1,0 +1,9 @@
+{
+    "events": [
+        {
+            "captionHeader": "This is a header",
+            "captionText": "This is a description",
+            "imageName": "eventOne"
+        }
+    ]
+}
