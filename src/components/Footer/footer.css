@@ -1,0 +1,10 @@
+/* .navbar-expand-lg .navbar-collapse {
+    flex-direction: row-reverse;
+} */
+
+.footer {
+    background: #3F3F3F;
+    height: 25vh;    
+    width: 100%;
+    z-index: 1000;
+}

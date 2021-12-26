@@ -6,25 +6,72 @@
     align-items: center;
 }
 
-video {
+.hero_title {
+    font-size: 7rem;
+}
+
+.parallax-content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* background: black;
+    opacity: .5; */
+}
+
+.time_section {
+    background: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36%;
+    color: white;
+    flex-direction: column;
+    opacity: 0.8;
+}
+
+.service {
+        font-size: 3rem;
+}
+
+.service_p {
+    font-size: 2rem;
+}
+
+.darkOverlay {
+    background: black;
+    z-index: 300;
+
+    height: 100%;
+    width: 100%;
+
+    opacity: .6;
+}
+
+.react-parallax {
+    z-index: 1;
     height: 100vh;
     width: 100%;
     object-fit: cover;
 }
-.title {
-    font-size: 50px;
-}
 
-.MuiPaper-root {
-    height: 100%;
-}
-
-.bishop_rose_img {
-    height: 90vh;
-}
-
-.mission_content {
+.section_title {
+    font-family: "Prestige Signature Script";
+    height: 20vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    color: #B88746;
+    margin: 12vh 0 5vh 0;   
+}
+
+.event_container {
+    height: 75vh;
+    margin-top: 10%;  
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -32,6 +79,68 @@ video {
     padding: 0 15px 0 15px;
 }
 
+.event_img {
+    object-fit: contain;
+    width: 70%;
+}
+
 .text_container {
     padding: 0 10px;
+}
+
+.connect_container {
+    height: 125vh;
+}
+
+.connect_image_container {
+    display: inline-flex;
+    margin: 5%;
+}
+
+.connect_image {
+    width: 40vh;
+    height: 30vh;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 878px) {
+    .hero_title {
+        font-size: 5rem;
+    }
+    .connect_container {
+        height: 188vh;
+    }
+    .event_img {
+        width: 100%;
+    }
+    .service {
+        font-size: 2rem;
+    }
+
+    .service_p {
+        font-size: 1rem;
+    }
+  }
+  @media only screen and (max-width: 625px) {
+    .hero_title {
+        font-size: 4.75rem;
+    }
+}
+
+  @media only screen and (max-width: 578px) {
+    .hero_title {
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width: 478px) {
+    .hero_title {
+        font-size: 2rem;
+    }
+    .service {
+        font-size: 1rem;
+    }
+
+    .service_p {
+        font-size: .75rem;
+    }
 }

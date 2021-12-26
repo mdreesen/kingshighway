@@ -1,3 +1,17 @@
 .react-slideshow-container {
     width: 100vh;
 }
+
+.event_img {
+    object-fit: contain;
+    width: 70%;
+}
+
+@media only screen and (max-width: 878px) {
+    .react-slideshow-container {
+        width: 60vh;
+    }
+    .event_img {
+        width: 40%;
+    }
+  }

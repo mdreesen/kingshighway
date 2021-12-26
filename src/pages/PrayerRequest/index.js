@@ -5,7 +5,7 @@ const PrayerRequest = () => {
         <div>
 
             <div className="container1">
-                <img className="PrayingMan" src="./images/PrayingMan.webp" style={{width:"100%"}} />
+                <img className="PrayingMan" src="./images/PrayingMan.webp" style={{width:"100%"}} alt="man praying" />
                 <div className="centered">Submit a Prayer Request</div>
             </div>
         </div>

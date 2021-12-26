@@ -2,29 +2,14 @@
     "links": [
         {
             "name": "Home",
-            "link": "/",
-            "component": "Home"
+            "link": "/"
         },
         {
             "name": "About",
-            "link": "/about",
-            "component": "About",
             "sub": [
                 {
-                    "name": "Gary",
-                    "link": "/location/Gary"
-                },
-                {
-                    "name": "Michigan",
-                    "link": "/location/Michigan"
-                },
-                {
-                    "name": "Pakistan",
-                    "link": "/location/Pakistan"
-                },
-                {
-                    "name": "Africa",
-                    "link": "/location/Africa"
+                    "name": "churches",
+                    "link": "/churches"
                 },
                 {
                     "name": "Leaders",
@@ -35,13 +20,11 @@
         },
         {
             "name": "Prayer Request",
-            "link": "/prayer",
-            "component": "Give"
+            "link": "/prayer"
         },
         {
             "name": "Give",
-            "link": "/give",
-            "component": "Give"
+            "link": "/give"
         }
     ]
 }
