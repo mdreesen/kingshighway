@@ -70,7 +70,7 @@
 }
 
 .event_container {
-    height: 75vh;
+    /* height: 75vh; */
     margin-top: 10%;  
     justify-content: space-between;
     align-content: center;
