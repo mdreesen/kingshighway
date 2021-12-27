@@ -103,6 +103,34 @@
     width: 40vh;
     height: 30vh;
     object-fit: cover;
+    z-index: 10;
+}
+
+.image_text_container {
+    position: absolute;
+    width: 40vh;
+    height: 30vh;
+    z-index: 200;
+    color: white;
+    background: black;
+    opacity: 0.3;
+}
+
+.image_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 40vh;
+    height: 30vh;
+    z-index: 200;
+    color: white;
+}
+
+.image_text:hover {
+    opacity: .5;
+    background: black;
 }
 
 @media only screen and (max-width: 878px) {

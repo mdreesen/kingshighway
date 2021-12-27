@@ -19,7 +19,25 @@ import connectFour from '../../utils/connectImages/connectFour.webp';
 const eventArr = [eventOne];
 
 // Connect Image Array
-const connectArr = [connectOne, connectTwo, connectThree, connectFour]
+// const connectArr = [connectOne, connectTwo, connectThree, connectFour]
+const connectArr = [
+    {
+        image: connectOne,
+        text: 'Events'
+    },
+    {
+        image: connectTwo,
+        text: 'About Us'
+    },
+    {
+        image: connectThree,
+        text: 'Giving'
+    },
+    {
+        image: connectFour,
+        text: 'Media'
+    }
+]
 
 const HeroSection = () => {
     return (
@@ -63,11 +81,13 @@ const ConnectSection = () => {
     return (
         <section className="connect_container">
             <h2 className="section_title">Get Connected</h2>
-            {connectArr.map((image, index) => {
+            {connectArr.map((item, index) => {
                 return (
                     <Suspense fallback={<div />} key={`connect-${index}-image`}>
                         <div className="connect_image_container">
-                            <img className="connect_image" alt="" src={image} loading="lazy"></img>
+                            <img className="connect_image" alt="" src={item.image} loading="lazy"/>
+                            <div className="image_text_container"/>
+                            <h3 className="image_text">{item.text}</h3>
                         </div>
                     </Suspense>
                 )
