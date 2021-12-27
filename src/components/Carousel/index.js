@@ -8,9 +8,8 @@ import imageOne from '../../utils/eventImages/eventOne.webp';
 // import eventData from '../../utils/eventdata.json';
 
 const Slideshow = () => {
-
     return (
-        <Carousel>
+        <Carousel controls={true} indicators={false}>
             <Carousel.Item>
                 <img
                     className="d-block w-100"

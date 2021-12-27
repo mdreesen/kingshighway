@@ -1,46 +1,82 @@
 import React from 'react';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container'
-import NavDropdown from 'react-bootstrap/NavDropdown'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 // Importing custom CSS
 import './footer.css';
 import '../../fonts/fonts.css';
 
-// importing navdata
-import navData from '../../utils/navdata.json';
-const navLink = navData.links;
+// import social media images
+import facebook from '../../utils/socialMedia/facebook.webp';
+import youtube from '../../utils/socialMedia/youtube.webp';
+import instagram from '../../utils/socialMedia/instagram.webp';
 
 export default function Footer() {
 
-    const Links = () => {
+    const mediaArr = [
+        {
+            icon: facebook,
+            link: 'https://m.facebook.com/profile.php?id=158878407477562'
+        },
+        {
+            icon: youtube,
+            link: 'https://www.youtube.com/channel/UC9M4fsfuROt3ZI4cO9SCCjg'
+        },
+        {
+            icon: instagram,
+            link: 'https://www.instagram.com/explore/locations/106359952/kings-highway-deliverance-church-international/'
+        }]
+
+    const Social = () => {
+        return mediaArr.map((each) => {
+            return (
+                <a href={each?.link}>
+                    <img className="icon" src={each?.icon}></img>
+                </a>
+            );
+        })
+    }
+
+
+
+    const SectionOne = () => {
         return (
-            <Nav className="me-auto">
-                {navLink.map((page, index) =>
-                    page.sub ? (
-                        <NavDropdown  title={page.name} id="collasible-nav-dropdown" key={`dropdown-${index}`}>
-                            {page.sub.map((sub, i) => <NavDropdown.Item  href={sub.link} key={`sub-${i}`}>{sub.name}</NavDropdown.Item>)}
-                        </NavDropdown>
-                    ) : (
-                        <Nav.Link href={page.link} key={`page-${index}`}>{page.name}</Nav.Link>
-                    )
-                )}
-            </Nav>
+            <div className="footer_section">
+                <p>
+                    Kings Highway Deliverance Church<br />
+                    500 East Ridge Road<br />
+                    Gary, IN 46409
+                </p>
+            </div>
+        );
+    };
+
+    const SectionTwo = () => {
+        return (
+            <div className="footer_section">
+                <div className="socialMedia">
+                    <div className="social_container">
+                        <Social />
+                    </div>
+                </div>
+                <p>Follow KHDCI on Social Media</p>
+            </div>
+        );
+    }
+
+    const SectionThree = () => {
+        return (
+            <div className="footer_section">
+                <p>Services Times<br />Sunday 10:00am</p>
+            </div>
         );
     }
 
     return (
         <div className="footer position-static" expand="lg" variant="dark">
-            <Container>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav>
-                        <Links />
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
+            <div className="column_container">
+                <SectionOne />
+                <SectionTwo />
+                <SectionThree />
+            </div>
         </div>
     );
 }

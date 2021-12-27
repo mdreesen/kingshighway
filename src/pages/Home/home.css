@@ -17,12 +17,11 @@
     justify-content: center;
     align-items: center;
     color: white;
-    /* background: black;
-    opacity: .5; */
 }
 
 .time_section {
-    background: black;
+    background: #B88746;
+    
     height: 100%;
     display: flex;
     justify-content: center;
@@ -30,7 +29,6 @@
     width: 36%;
     color: white;
     flex-direction: column;
-    opacity: 0.8;
 }
 
 .service {
@@ -70,7 +68,6 @@
 }
 
 .event_container {
-    height: 75vh;
     margin-top: 10%;  
     justify-content: space-between;
     align-content: center;
@@ -101,6 +98,37 @@
     width: 40vh;
     height: 30vh;
     object-fit: cover;
+    z-index: 10;
+}
+
+.image_text_container {
+    position: absolute;
+    width: 40vh;
+    height: 30vh;
+    z-index: 200;
+    color: white;
+    background: black;
+    opacity: 0.3;
+}
+
+.image_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 40vh;
+    height: 30vh;
+    z-index: 200;
+    color: white;
+
+    transition: 0.2s;
+}
+
+.image_text:hover {
+    opacity: .5;
+    background: black;
+    transition: 0.2s;
 }
 
 @media only screen and (max-width: 878px) {
