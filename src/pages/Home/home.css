@@ -76,6 +76,20 @@
     padding: 0 15px 0 15px;
 }
 
+.event_carousel_container {
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+}
+
+.event_content {
+    width: 65vh;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .event_img {
     object-fit: contain;
     width: 70%;

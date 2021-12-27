@@ -44,11 +44,11 @@ const HeroSection = () => {
         <section className="hero_content">
             <Parallax bgImage={heroImage} strength={200}>
                 <div className="parallax-content">
-                    <h2 className="hero_title">Kings Highway<br/>Deliverance Church<br/>International</h2>
+                    <h2 className="hero_title">Kings Highway<br />Deliverance Church<br />International</h2>
                 </div>
             </Parallax>
             <div className="time_section">
-                <h3 className="service">Service<br/>Times</h3>
+                <h3 className="service">Service<br />Times</h3>
                 <p className="service_p">Sunday Service:</p>
                 <p className="service_p">10am - 12pm Central</p>
             </div>
@@ -65,9 +65,11 @@ const EventSection = () => {
                     eventArr.map((image, index) => {
                         return (
                             <Suspense fallback={<div />} key={`event-${index}-image`}>
-                                <div className="event_content">
-                                    <Carousel/>
-                                </div>
+                                <section className="event_carousel_container">
+                                    <div className="event_content">
+                                        <Carousel />
+                                    </div>
+                                </section>
                             </Suspense>
                         );
                     })
@@ -85,8 +87,8 @@ const ConnectSection = () => {
                 return (
                     <Suspense fallback={<div />} key={`connect-${index}-image`}>
                         <div className="connect_image_container">
-                            <img className="connect_image" alt="" src={item.image} loading="lazy"/>
-                            <div className="image_text_container"/>
+                            <img className="connect_image" alt="" src={item.image} loading="lazy" />
+                            <div className="image_text_container" />
                             <h3 className="image_text">{item.text}</h3>
                         </div>
                     </Suspense>
