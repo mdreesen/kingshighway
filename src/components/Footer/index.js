@@ -29,7 +29,7 @@ export default function Footer() {
         return mediaArr.map((each) => {
             return (
                 <a href={each?.link}>
-                    <img className="icon" src={each?.icon}></img>
+                    <img className="icon" src={each?.icon} alt=""></img>
                 </a>
             );
         })
