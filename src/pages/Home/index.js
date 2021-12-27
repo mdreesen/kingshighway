@@ -18,8 +18,6 @@ import connectFour from '../../utils/connectImages/connectFour.webp';
 // Event Image Array
 const eventArr = [eventOne];
 
-// Connect Image Array
-// const connectArr = [connectOne, connectTwo, connectThree, connectFour]
 const connectArr = [
     {
         image: connectOne,
@@ -50,7 +48,7 @@ const HeroSection = () => {
             <div className="time_section">
                 <h3 className="service">Service<br />Times</h3>
                 <p className="service_p">Sunday Service:</p>
-                <p className="service_p">10am - 12pm Central</p>
+                <p className="service_p">10am Central</p>
             </div>
         </section>
     );
