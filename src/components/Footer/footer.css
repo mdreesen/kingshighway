@@ -19,7 +19,7 @@
 }
 
 .social_container {
-    width: 65%;
+    width: 46%;
     display: flex;
     justify-content: space-around;
 }
@@ -34,6 +34,15 @@
 .icon {
     width: 2rem;
 }
+
+
+@media only screen and (max-width: 878px) {
+    .social_container {
+        width: 65%;
+        display: flex;
+        justify-content: space-around;
+    }
+  }
 
 @media only screen and (max-width: 578px) {
     .icon {
