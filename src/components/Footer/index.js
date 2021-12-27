@@ -26,11 +26,10 @@ export default function Footer() {
         }]
 
     const Social = () => {
-         return mediaArr.map((each) => {
-             console.log(each.icon)
+        return mediaArr.map((each) => {
             return (
-                <a href={each.link}>
-                    <img className="icon" src={each.icon}></img>
+                <a href={each?.link}>
+                    <img className="icon" src={each?.icon}></img>
                 </a>
             );
         })
