@@ -39,7 +39,7 @@
     text-align: left;
     padding: 1rem;
     color: #B88746;
-    border-style: solid;
+    /* border-style: solid; */
 }
 
 .mission_title {
@@ -52,6 +52,7 @@
 
 .mission_description {
     color: black;
+    margin: 10%;
 }
 
 .service {
@@ -87,16 +88,17 @@
     align-items: center;
     font-size: 65px;
     color: #B88746;
-    margin: 12vh 0 5vh 0;   
+    /* margin: 12vh 0 5vh 0;    */
 }
 
 .event_container {
-    margin-top: 10%;  
+    /* margin-top: 10%;   */
     justify-content: space-between;
     align-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 15px 0 15px;
+    padding: 30px 15px 0 15px;
+    background: whitesmoke;
 }
 
 .event_carousel_container {
@@ -195,6 +197,10 @@
   @media only screen and (max-width: 578px) {
     .hero_title {
         font-size: 4rem;
+    }
+    .mission_description {
+        color: black;
+        margin: 1%;
     }
 }
 @media only screen and (max-width: 478px) {
