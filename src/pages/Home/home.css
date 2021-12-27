@@ -31,6 +31,29 @@
     flex-direction: column;
 }
 
+.mission {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 1rem;
+    color: #B88746;
+    border-style: solid;
+}
+
+.mission_title {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;        
+}
+
+.mission_description {
+    color: black;
+}
+
 .service {
         font-size: 3rem;
 }
@@ -176,13 +199,18 @@
 }
 @media only screen and (max-width: 478px) {
     .hero_title {
-        font-size: 2rem;
+        font-size: 2.6rem;
+        line-height: 160%;
     }
     .service {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .service_p {
-        font-size: .75rem;
+        font-size: .9rem;
+    }
+
+    .mission {
+        height: 80vh;
     }
 }

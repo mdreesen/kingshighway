@@ -38,7 +38,7 @@
 
 @media only screen and (max-width: 878px) {
     .social_container {
-        width: 65%;
+        width: 75%;
         display: flex;
         justify-content: space-around;
     }
@@ -46,9 +46,9 @@
 
 @media only screen and (max-width: 578px) {
     .icon {
-        width: 1rem;
+        width: 1.5rem;
     }
     .column_container {
-        font-size: .62rem;
+        font-size: .7rem;
     }
 }
