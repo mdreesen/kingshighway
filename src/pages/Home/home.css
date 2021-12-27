@@ -17,14 +17,10 @@
     justify-content: center;
     align-items: center;
     color: white;
-    /* background: black;
-    opacity: .5; */
 }
 
 .time_section {
     background: #B88746;
-    /* background: black;
-    opacity: 0.8; */
     
     height: 100%;
     display: flex;
@@ -72,7 +68,6 @@
 }
 
 .event_container {
-    /* height: 75vh; */
     margin-top: 10%;  
     justify-content: space-between;
     align-content: center;
@@ -126,11 +121,14 @@
     height: 30vh;
     z-index: 200;
     color: white;
+
+    transition: 0.2s;
 }
 
 .image_text:hover {
     opacity: .5;
     background: black;
+    transition: 0.2s;
 }
 
 @media only screen and (max-width: 878px) {
