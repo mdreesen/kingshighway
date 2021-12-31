@@ -1,3 +1,27 @@
-.container1 {
-    
+.form-background {
+    background-image: url("../../utils/heroImages/PrayingMan.webp");
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 1000px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+.form {
+    padding: 5px 20px;
+}
+
+.form fieldset {
+    margin: 20px 0;
+}
+
+.section_header{
+    color:whitesmoke;
 }

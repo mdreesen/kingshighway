@@ -1,13 +1,28 @@
 import React from 'react';
+import "./prayer.css";
+
+
+
 
 const PrayerRequest = () => {
     return (
-        <div>
 
-            <div className="container1">
-                <img className="PrayingMan" src="./images/PrayingMan.webp" style={{width:"100%"}} alt="man praying" />
-                <div className="centered">Submit a Prayer Request</div>
+        <div className="form-background">
+            <div className="form">
+            <h1 className="section_header">Prayer Requests</h1>
+            <form>
+                <fieldset>
+                    <label>
+                        <p>Name</p>
+                            <input name="name" />
+                    </label>
+                </fieldset>
+                 <button type="submit">Submit</button>
+            </form>
+
             </div>
+                
+            
         </div>
     );
 };
