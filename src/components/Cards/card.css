@@ -6,3 +6,37 @@
     height: 30vh;
     object-fit: cover;
 }
+
+.desktop {
+    display: block;
+}
+.mobile {
+    display: none;
+}
+
+.asset {
+    height: 200px;
+}
+
+.card_display {
+    display: flex;
+}
+
+.left_asset {
+    display: flex;
+    justify-content: start;
+}
+
+.right_asset {
+    display: flex;
+    justify-content: end;
+}
+
+@media only screen and (max-width: 878px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+  }

@@ -13,23 +13,67 @@ export default function LeaderCard() {
     const data = leaderdata.leaders;
     console.log(data)
 
+    const LeftAsset = (props) => {
+        return (
+            <div>
+                <div className="left_asset">
+                    <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
+                    <div>
+                        <h3>{props.leaderName}</h3>
+                        <div className="interior_divider"></div>
+                        <p className="about_text">{props.aboutLeader}</p>
+                    </div>
+                </div>
+            </div>
+        );
+    };
+
+    const RightAsset = (props) => {
+        return (
+            <div>
+                <div className='right_asset'>
+                    <div>
+                        <h3>{props.leaderName}</h3>
+                        <div className="interior_divider"></div>
+                        <p className="about_text">{props.aboutLeader}</p>
+                    </div>
+                    <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
+                </div>
+            </div>
+        );
+    }
+
     return (
-<Row xs={1} md={2} lg={4} className="g-4">
-        {
+        <Row xs={1} className="g-4">
+            {
                 data?.map((leader, index) => {
+                    const side = index % 2 === 0 ? 'left_asset' : 'right_asset';
                     return (
-                            <Card>
-                                <Card.Img variant="top" src={`./images/${leader.image}.webp`}/>
-                                <Card.Body>
-                                    <Card.Title>{leader.name}</Card.Title>
-                                    <Card.Text>
-                                        {leader.about}
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
+                        <div className="card_display">
+                            <div className={side}>
+                                {
+                                    index % 2 === 0 ? (
+                                        <LeftAsset index={index} aboutLeader={leader?.about} leaderName={leader?.name} leaderImg={leader?.image} />
+                                    ) : (
+                                        <RightAsset aboutLeader={leader?.about} leaderName={leader?.name} leaderImg={leader?.image} />
+                                    )
+                                }
+                            </div>
+                            <div className='mobile'>
+                                <Card>
+                                    <Card.Img variant="top" src={`./images/${leader.image}.webp`} />
+                                    <Card.Body>
+                                        <Card.Title>{leader.name}</Card.Title>
+                                        <Card.Text>
+                                            {leader.about}
+                                        </Card.Text>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
                     );
                 })
             }
-            </Row>
+        </Row>
     );
 }
