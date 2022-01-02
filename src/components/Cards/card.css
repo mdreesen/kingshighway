@@ -14,12 +14,15 @@
     display: none;
 }
 
-.asset {
-    height: 200px;
+.asset_container {
+    width: 60vh;
+    height: 50vh;
 }
 
-.card_display {
-    display: flex;
+.asset {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .left_asset {
@@ -32,8 +35,16 @@
     justify-content: end;
 }
 
-@media only screen and (max-width: 878px) {
-    .desktop {
+.leader_name {
+    padding: 0 1rem 0 1rem;    
+}
+
+@media only screen and (max-width: 820px) {
+    .left_asset {
+        display: none;
+    }
+    
+    .right_asset {
         display: none;
     }
     .mobile {

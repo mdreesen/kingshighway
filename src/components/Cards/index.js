@@ -17,10 +17,12 @@ export default function LeaderCard() {
         return (
             <div>
                 <div className="left_asset">
-                    <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
+                    <div className='asset_container'>
+                        <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
+                    </div>
                     <div>
-                        <h3>{props.leaderName}</h3>
-                        <div className="interior_divider"></div>
+                        <h3 className='leader_name'>{props.leaderName}</h3>
+                        {/* <div className="interior_divider"></div> */}
                         <p className="about_text">{props.aboutLeader}</p>
                     </div>
                 </div>
@@ -33,18 +35,20 @@ export default function LeaderCard() {
             <div>
                 <div className='right_asset'>
                     <div>
-                        <h3>{props.leaderName}</h3>
-                        <div className="interior_divider"></div>
+                        <h3 className='leader_name'>{props.leaderName}</h3>
+                        {/* <div className="interior_divider"></div> */}
                         <p className="about_text">{props.aboutLeader}</p>
                     </div>
-                    <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
+                    <div className='asset_container'>
+                        <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
+                    </div>
                 </div>
             </div>
         );
     }
 
     return (
-        <Row xs={1} className="g-4">
+        <Row xs={1} md={1} className="g-4">
             {
                 data?.map((leader, index) => {
                     const side = index % 2 === 0 ? 'left_asset' : 'right_asset';
@@ -53,7 +57,7 @@ export default function LeaderCard() {
                             <div className={side}>
                                 {
                                     index % 2 === 0 ? (
-                                        <LeftAsset index={index} aboutLeader={leader?.about} leaderName={leader?.name} leaderImg={leader?.image} />
+                                        <LeftAsset aboutLeader={leader?.about} leaderName={leader?.name} leaderImg={leader?.image} />
                                     ) : (
                                         <RightAsset aboutLeader={leader?.about} leaderName={leader?.name} leaderImg={leader?.image} />
                                     )
