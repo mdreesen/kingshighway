@@ -1,3 +1,17 @@
 .church_hero {
     display: flex;
 }
+
+.church_links {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.link {
+    color: rgba(7,44,80,1);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #B88746;
+}
