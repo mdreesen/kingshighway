@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import pages
 import Home from './pages/Home';
 import Churches from './pages/About/churches';
+import ChurchGary from './pages/About/Church/Gary';
+import ChurchLansing from './pages/About/Church/Lansing';
 import Leaders from './pages/About/leaders';
 import Give from './pages/Give';
 import GlobalMinistries from './pages/GlobalMinistries';
@@ -23,6 +25,10 @@ function App() {
           {/* Sub links for about */}
           <Route exact path="/churches" component={Churches} />
           <Route exact path="/leaders" component={Leaders} />
+          {/* Sub links for churches */}
+          <Route exact path="/churches/gary" component={ChurchGary} />
+          <Route exact path="/churches/lansing" component={ChurchLansing} />
+          {/* End Sub links for churches */}
           {/* End sub links */}
           <Route exact path="/give" component={Give} />
           <Route exact path='/global-ministries' component={GlobalMinistries} />

@@ -20,9 +20,9 @@ export default function LeaderCard() {
                     <div className='asset_container'>
                         <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
                     </div>
-                    <div>
+                    <div className="divider"></div>
+                    <div className='content_container'>
                         <h3 className='leader_name'>{props.leaderName}</h3>
-                        {/* <div className="interior_divider"></div> */}
                         <p className="about_text">{props.aboutLeader}</p>
                     </div>
                 </div>
@@ -34,11 +34,11 @@ export default function LeaderCard() {
         return (
             <div>
                 <div className='right_asset'>
-                    <div>
+                    <div className='content_container'>
                         <h3 className='leader_name'>{props.leaderName}</h3>
-                        {/* <div className="interior_divider"></div> */}
                         <p className="about_text">{props.aboutLeader}</p>
                     </div>
+                    <div className="divider"></div>
                     <div className='asset_container'>
                         <img className='asset' src={`./images/${props.leaderImg}.webp`}></img>
                     </div>

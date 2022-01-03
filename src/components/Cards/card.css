@@ -15,7 +15,7 @@
 }
 
 .asset_container {
-    width: 60vh;
+    width: 50vh;
     height: 50vh;
 }
 
@@ -28,15 +28,24 @@
 .left_asset {
     display: flex;
     justify-content: start;
+    margin: 4vh;    
 }
 
 .right_asset {
     display: flex;
     justify-content: end;
+    margin: 4vh;    
 }
 
 .leader_name {
     padding: 0 1rem 0 1rem;    
+}
+
+.content_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 820px) {
