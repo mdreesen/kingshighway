@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.42d4825a.chunk.css",
-    "main.js": "/static/js/main.46a80936.chunk.js",
-    "main.js.map": "/static/js/main.46a80936.chunk.js.map",
+    "main.css": "/static/css/main.5f9040d5.chunk.css",
+    "main.js": "/static/js/main.bea8f4be.chunk.js",
+    "main.js.map": "/static/js/main.bea8f4be.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.390ff718.js",
     "runtime-main.js.map": "/static/js/runtime-main.390ff718.js.map",
     "static/css/2.0a9ec390.chunk.css": "/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.90cf27b4.chunk.js": "/static/js/2.90cf27b4.chunk.js",
-    "static/js/2.90cf27b4.chunk.js.map": "/static/js/2.90cf27b4.chunk.js.map",
+    "static/js/2.8fb64258.chunk.js": "/static/js/2.8fb64258.chunk.js",
+    "static/js/2.8fb64258.chunk.js.map": "/static/js/2.8fb64258.chunk.js.map",
     "static/js/3.be73fd51.chunk.js": "/static/js/3.be73fd51.chunk.js",
     "static/js/3.be73fd51.chunk.js.map": "/static/js/3.be73fd51.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.42d4825a.chunk.css.map": "/static/css/main.42d4825a.chunk.css.map",
-    "static/js/2.90cf27b4.chunk.js.LICENSE.txt": "/static/js/2.90cf27b4.chunk.js.LICENSE.txt",
+    "static/css/main.5f9040d5.chunk.css.map": "/static/css/main.5f9040d5.chunk.css.map",
+    "static/js/2.8fb64258.chunk.js.LICENSE.txt": "/static/js/2.8fb64258.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/static/media/RecordaScript.8f3ba4d4.ttf",
     "static/media/choirImage.56c47282.webp": "/static/media/choirImage.56c47282.webp",
+    "static/media/church_gary.dfa140b1.webp": "/static/media/church_gary.dfa140b1.webp",
+    "static/media/church_lansing.6838ed3d.webp": "/static/media/church_lansing.6838ed3d.webp",
     "static/media/connectFour.2e4df5f5.webp": "/static/media/connectFour.2e4df5f5.webp",
     "static/media/connectOne.55281ed4.webp": "/static/media/connectOne.55281ed4.webp",
     "static/media/connectThree.01d04570.webp": "/static/media/connectThree.01d04570.webp",
@@ -29,8 +31,8 @@
   "entrypoints": [
     "static/js/runtime-main.390ff718.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.90cf27b4.chunk.js",
-    "static/css/main.42d4825a.chunk.css",
-    "static/js/main.46a80936.chunk.js"
+    "static/js/2.8fb64258.chunk.js",
+    "static/css/main.5f9040d5.chunk.css",
+    "static/js/main.bea8f4be.chunk.js"
   ]
 }
